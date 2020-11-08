@@ -7,12 +7,14 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { PeopleComponent } from './components/people/people.component';
 import { PlanetsComponent } from './components/planets/planets.component';
+import { SpeciesComponent } from './components/species/species.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PeopleComponent,
-    PlanetsComponent
+    PlanetsComponent,
+	SpeciesComponent
   ],
   imports: [
     BrowserModule,
