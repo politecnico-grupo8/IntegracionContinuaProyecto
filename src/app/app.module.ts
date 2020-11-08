@@ -6,12 +6,13 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PeopleComponent } from './components/people/people.component';
-
+import { PlanetsComponent } from './components/planets/planets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PeopleComponent
+    PeopleComponent,
+    PlanetsComponent
   ],
   imports: [
     BrowserModule,
