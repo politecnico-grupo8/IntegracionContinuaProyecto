@@ -8,7 +8,7 @@ import { SpeciesComponent } from './components/species/species.component';
 const appRoutes: Routes = [
     {path: '', component: PeopleComponent},
     {path: 'people', component: PeopleComponent},
-    {path: 'planets', component: PlanetsComponent}
+    {path: 'planets', component: PlanetsComponent},
 	{path: 'species', component: SpeciesComponent}
 ];
 
