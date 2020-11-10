@@ -9,7 +9,8 @@ const appRoutes: Routes = [
     {path: '', component: PeopleComponent},
     {path: 'people', component: PeopleComponent},
     {path: 'planets', component: PlanetsComponent},
-	{path: 'species', component: SpeciesComponent}
+    {path: 'species', component: SpeciesComponent},
+    {path: 'species', component: SpeciesComponent}
 ];
 
 export const appRoutingProviders: any[] = [];
