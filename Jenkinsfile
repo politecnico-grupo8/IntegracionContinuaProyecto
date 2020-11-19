@@ -5,13 +5,15 @@ pipeline {
       steps {
         bat 'npm install -g @angular/cli'
         bat 'npm install'
-        bat 'npm run --build'
+        bat 'npm run --build '
       }
     }
+
     stage('deploy') {
       steps {
         bat 'firebase deploy'
       }
     }
+
   }
 }
