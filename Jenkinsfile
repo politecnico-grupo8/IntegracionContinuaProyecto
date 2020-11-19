@@ -1,10 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('build') {
       steps {
-        sh '''cd IntegracionContinuaProyecto
-ng build --prod'''
+        sh 'ng build --prod'
       }
     }
 
