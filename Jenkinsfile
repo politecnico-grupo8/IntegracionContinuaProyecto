@@ -1,11 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh '''    npm install -g @angular/cli
-    npm install
-    ng build --prod'''
+        sh '''cd IntegracionContinuaProyecto>
+ng build --prod'''
       }
     }
 
