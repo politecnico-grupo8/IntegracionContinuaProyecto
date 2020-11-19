@@ -12,7 +12,7 @@ pipeline {
     stage('deploy') {
       steps {
         bat 'npm install -g firebase-tools'
-        pwsh 'firebase deploy'
+        powershell 'firebase deploy'
       }
     }
 
