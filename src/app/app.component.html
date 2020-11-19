@@ -23,9 +23,11 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" [routerLink]="['/people']">People</a>
-            <a class="dropdown-item" [routerLink]="['/planets']">Planets</a>
-            <a class="dropdown-item" [routerLink]="['/species']">Species</a>
+            <a class="dropdown-item" [routerLink]="['/films']">Films</a>
             <a class="dropdown-item" [routerLink]="['/starships']">Starships</a>
+            <a class="dropdown-item" [routerLink]="['/vehicles']">Vehicles</a>
+            <a class="dropdown-item" [routerLink]="['/species']">Species</a>
+            <a class="dropdown-item" [routerLink]="['/planets']">Planets</a>
           </div>
         </li>
       </ul>
@@ -35,7 +37,6 @@
   </nav><!-- end menu-->
 
   <!-- Routing -->
-
   <router-outlet></router-outlet>
 
 </div>
