@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh '''cd IntegracionContinuaProyecto>
+        sh '''cd IntegracionContinuaProyecto
 ng build --prod'''
       }
     }
