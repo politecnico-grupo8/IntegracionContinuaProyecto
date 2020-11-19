@@ -3,13 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        bat 'npm install ng build --prod'
-      }
-    }
-    stage('deploy') {
-      steps {
-         bat 'firebase login:ci'
-         bat 'firebase deploy'
+        bat 'npm install ng build --prod ng serve'
       }
     }
   }
