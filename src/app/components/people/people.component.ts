@@ -10,7 +10,7 @@ import { PeopleService } from '../../services/people.service';
 })
 export class PeopleComponent implements OnInit {
 
-  private page_title: string;
+  public page_title: string;
   public people: People;
   public result;
 
@@ -22,10 +22,10 @@ export class PeopleComponent implements OnInit {
    }
 
   ngOnInit() {
-    
+
   }
 
-  onSubmit() {
+  onSubmit(any) {
     this._peolpleService.getPeople(this.people).subscribe(
       response => {
         this.result = response.results;

@@ -10,7 +10,7 @@ import { StarshipsService } from '../../services/starships.service';
 })
 export class StarshipsComponent implements OnInit {
 
-  private page_title: string;
+  public page_title: string;
   public starships: Starships;
   public result;
 
@@ -24,7 +24,7 @@ export class StarshipsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit() {
+  onSubmit(any) {
     this._starshipsService.getStarships(this.starships).subscribe(
       response => {
         this.result = response.results;

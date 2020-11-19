@@ -10,7 +10,7 @@ import { VehiclesService } from '../../services/vehicles.service';
 })
 export class VehiclesComponent implements OnInit {
 
-  private page_title: string;
+  public page_title: string;
   public vehicles: Vehicles;
   public result;
 
@@ -22,10 +22,10 @@ export class VehiclesComponent implements OnInit {
    }
 
   ngOnInit() {
-    
+
   }
 
-  onSubmit() {
+  onSubmit(any) {
     this._vehiclesService.getVehicles(this.vehicles).subscribe(
       response => {
         this.result = response.results;

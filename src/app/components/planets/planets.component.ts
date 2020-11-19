@@ -10,7 +10,7 @@ import { PlanetsService } from '../../services/planets.service';
 })
 export class PlanetsComponent implements OnInit {
 
-  private page_title: string;
+  public page_title: string;
   public planets: Planets;
   public result;
 
@@ -24,7 +24,7 @@ export class PlanetsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit() {
+  onSubmit(any) {
     this._planetsService.getVehicles(this.planets).subscribe(
       response => {
         this.result = response.results;

@@ -10,7 +10,7 @@ import { SpeciesService } from '../../services/species.service';
 })
 export class SpeciesComponent implements OnInit {
 
-  private page_title: string;
+  public page_title: string;
   public species: Species;
   public result;
 
@@ -22,10 +22,10 @@ export class SpeciesComponent implements OnInit {
    }
 
   ngOnInit() {
-    
+
   }
 
-  onSubmit() {
+  onSubmit(any) {
     this._speciesService.getSpecies(this.species).subscribe(
       response => {
         this.result = response.results;
