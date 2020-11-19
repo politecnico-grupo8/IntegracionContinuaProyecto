@@ -8,7 +8,7 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        bat 'npm install -g firebase-tools firebase deploy'
+        bat 'npm install -g firebase-tools'
       }
     }
   }
