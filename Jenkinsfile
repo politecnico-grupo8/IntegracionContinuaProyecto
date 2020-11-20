@@ -11,7 +11,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-        bat 'XCopy dist\\ C:\\inetpub\\wwwroot\\dist'
+        bat 'XCopy dist\\ C:\\inetpub\\wwwroot\\dist\\'
       }
     }
 
