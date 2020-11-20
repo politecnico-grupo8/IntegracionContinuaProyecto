@@ -12,7 +12,7 @@ pipeline {
     stage('deploy') {
       steps {
         bat 'npm install -g firebase-tools'
-        bat 'XCopy dist\\ C:\\inetpub\\wwwroot'
+        bat 'XCopy dist\\ C:\\inetpub\\wwwroot\\dist'
       }
     }
 
