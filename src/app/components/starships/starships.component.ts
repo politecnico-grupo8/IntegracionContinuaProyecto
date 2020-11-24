@@ -11,7 +11,7 @@ import { StarshipsService } from '../../services/starships.service';
 export class StarshipsComponent implements OnInit {
 
   public page_title: string;
-
+  public starships: Starships;
   public result;
 
   constructor(
