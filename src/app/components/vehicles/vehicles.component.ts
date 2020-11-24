@@ -25,16 +25,7 @@ export class VehiclesComponent implements OnInit {
 
   }
 
-  onSubmit(any) {
-    this._vehiclesService.getVehicles(this.vehicles).subscribe(
-      response => {
-        this.result = response.results;
-        console.log(this.result);
-      },
-      error =>{
-        console.log(error);
-      }
-    );
+
   }
 
 }
