@@ -13,7 +13,11 @@ describe('VehiclesComponent', () => {
     .compileComponents();
   }));
 
-
+  beforeEach(() => {
+    fixture = TestBed.createComponent(VehiclesComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
