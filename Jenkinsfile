@@ -11,8 +11,7 @@ pipeline {
 
     stage('deploy') {
       steps {
-        bat 'npm install -g firebase-tools'
-        bat 'npm run ng serve'
+        bat 'XCopy dist\\ C:\\inetpub\\wwwroot\\dist\\'
       }
     }
 
