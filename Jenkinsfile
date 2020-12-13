@@ -22,6 +22,5 @@ pipeline {
         bat 'XCopy dist\\ C:\\inetpub\\wwwroot\\dist\\'
       }
     }
-
   }
 }
