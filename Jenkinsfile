@@ -5,9 +5,10 @@ pipeline {
       steps {
         bat 'npm install -g @angular/cli'
         bat 'npm install'
-        bat 'npm run ng test'
+        bat 'npm run ng test -- --watch=false --code-coverage'
       }
     }
+
     stage('build') {
       steps {
         bat 'npm install -g @angular/cli'
@@ -23,4 +24,4 @@ pipeline {
     }
 
   }
-}    
+}
