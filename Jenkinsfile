@@ -1,25 +1,23 @@
 pipeline {
   agent any
   stages {
-    stage('test') {
+    stage('Tests') {
       steps {
-        sh 'sudo npm install -g @angular/cli'
         sh 'sudo npm install'
         sh 'sudo npm run ng test -- --watch=false --code-coverage'
       }
     }
 
-    stage('build') {
+    stage('Build') {
       steps {
-        sh 'sudo npm install -g @angular/cli'
-        sh 'sudo npm install'
-        sh 'sudo npm run ng build'
+        sh 'sudo docker build -t scanner-solutions .'
       }
     }
 
-    stage('deploy') {
+    stage('Deploy') {
       steps {
-        sh 'XCopy dist\\ C:\\inetpub\\wwwroot\\dist\\'
+        sh 'sudo docker rm -f escaner-poli'
+        sh 'sudo docker run -d --name escaner-poli -p 4530:4200 scanner-solutions'
       }
     }
   }
