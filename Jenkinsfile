@@ -3,17 +3,17 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'npm install -g @angular/cli'
-        sh 'npm install'
-        sh 'npm run ng test -- --watch=false --code-coverage'
+        sh 'sudo npm install -g @angular/cli'
+        sh 'sudo npm install'
+        sh 'sudo npm run ng test -- --watch=false --code-coverage'
       }
     }
 
     stage('build') {
       steps {
-        sh 'npm install -g @angular/cli'
-        sh 'npm install'
-        sh 'npm run ng build'
+        sh 'sudo npm install -g @angular/cli'
+        sh 'sudo npm install'
+        sh 'sudo npm run ng build'
       }
     }
 
