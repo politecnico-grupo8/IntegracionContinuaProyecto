@@ -3,23 +3,23 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        bat 'npm install -g @angular/cli'
-        bat 'npm install'
-        bat 'npm run ng test -- --watch=false --code-coverage'
+        sh 'sudo npm install -g @angular/cli'
+        sh 'sudo npm install'
+        sh 'sudo npm run ng test -- --watch=false --code-coverage'
       }
     }
 
     stage('build') {
       steps {
-        bat 'npm install -g @angular/cli'
-        bat 'npm install'
-        bat 'npm run ng build'
+        sh 'sudo npm install -g @angular/cli'
+        sh 'sudo npm install'
+        sh 'sudo npm run ng build'
       }
     }
 
     stage('deploy') {
       steps {
-        bat 'XCopy dist\\ C:\\inetpub\\wwwroot\\dist\\'
+        sh 'XCopy dist\\ C:\\inetpub\\wwwroot\\dist\\'
       }
     }
   }
